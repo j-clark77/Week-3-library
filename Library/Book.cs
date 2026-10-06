@@ -10,6 +10,16 @@ namespace Library
        public string author;
        public int isbn;
 
+        // Paramaterised constructor
+        public Book(string bookTitle, string bookAuthor, int bookIsbn)
+        { 
+            title = bookTitle;
+            author = bookAuthor;
+            isbn = bookIsbn;
+        }
+
+
+
         public void DisplayInfo()
         {
             Console.WriteLine($"Title: {title}");
@@ -17,6 +27,8 @@ namespace Library
             Console.WriteLine($"ISBN: {isbn}");
             Console.WriteLine("-------------------------");
         }
+
+
 
     }
 
